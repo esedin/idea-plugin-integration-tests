@@ -1,0 +1,25 @@
+<idea-plugin>
+  <id>com.softcomputer.csf.testutils</id>
+  <name>CSF Integration Test Utility</name>
+  <version>1.0</version>
+
+  <description><![CDATA[
+      CSF Integration Test Runner
+    ]]></description>
+
+  <change-notes></change-notes>
+
+  <idea-version since-build="145.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <codeInsight.lineMarkerProvider language="Groovy" implementationClass="com.softcomputer.csf.testutil.MyLineMarkerProvider"/>
+    <toolWindow id="CSF Integration Test" icon="/icon/download.png" anchor="bottom" canCloseContents="true"
+                factoryClass="com.softcomputer.csf.testutil.IntegrationTestToolWindow"/>
+  </extensions>
+
+  <actions>
+
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
